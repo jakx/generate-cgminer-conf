@@ -12,18 +12,6 @@ ATI_IN='* 0. 01:00.0 AMD Radeon HD 7900 Series
 
 * - Default adapter';
 
-#get_video_card(){
-#        OWNER=$(stat -c %u /mnt/nfs 2>&1)
-#        if  echo $OWNER | grep -q "Transport endpoint is not connected" ; then
-#            sudo umount /mnt/nfs
-#            sshfs jakx@jakx.webfactional.com:/home/jakx/ /mnt/nfs/
-#        fi
-
-#        if [ "$OWNER" != 791 ]; then
-#            sshfs jakx@jakx.webfactional.com:/home/jakx/ /mnt/nfs/
-#        fi
-#}
-
 
 VIDEO_CARDS=()
 OLD_IFS=$IFS;
@@ -41,13 +29,9 @@ for line in $ATI_IN; do
         VIDEO_CARDS=("${VIDEO_CARDS[@]}" "$VIDEO_CARD");
     fi
  done
-#echo ${VIDEO_CARDS[@]};
 IFS=$OLD_IFS; 
 
 
-#echo "" > cgminer.conf;
-#output=$(cat cgminer.start);
-#echo $output, > cgminer.conf;
 cat cgminer.start > cgminer.conf;
 
 echo -ne "    ">> cgminer.conf
@@ -95,13 +79,3 @@ do
 done
 echo "" >> cgminer.conf
 echo "}" >> cgminer.conf
-#echo -ne "," #> cgminer.conf;
-
-
-#i=0;
-#for VIDEO in "${VIDEO_CARDS[@]}" do
-#  `cat ./miner_conf.json | jq "'.$VIDEO_CARD | .threadconcurrency'"`
-#    hi=$(cat ./miner_conf.json);
-#    echo "${VIDEO}";
-#do
-#done 
