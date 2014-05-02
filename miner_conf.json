@@ -1,0 +1,29 @@
+{
+"m7900": 
+       {
+            "gpumemclock"  : "1500",
+            "threadconcurrency"       : "21712",
+            "intensity"      : "20",
+            "worksize"      : "256",
+            "gpuengine" : "1060"
+        }
+     ,
+"m290": 
+       {
+            "gpumemclock"  : "1350",
+            "threadconcurrency"       : "30500",
+            "intensity"      : "20",
+            "worksize"      : "512",
+            "gpuengine" : "947"
+        }
+     ,
+"m270": 
+       {
+            "gpumemclock"  : "1500",
+            "threadconcurrency"       : "16000",
+            "intensity"      : "20",
+            "worksize"      : "256",
+            "gpuengine" : "1050"
+        }
+     
+}
