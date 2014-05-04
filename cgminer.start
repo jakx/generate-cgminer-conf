@@ -5,20 +5,19 @@
             "user"      : "1KMrcpjs2ZG6RHMXewiUtM7vCUhh3MFMov",
             "pass"      : "x"
         }
-  
-,         {
+,
+         {
             "poolname"  : "Shift - Coinshift",
             "url"       : "stratum+tcp://mine.coinshift.com:3333",
             "user"      : "1KMrcpjs2ZG6RHMXewiUtM7vCUhh3MFMov",
             "pass"      : "x"
         }
-   
     ],
     "auto-fan": true,
+
     "temp-cutoff": "99",
     "temp-overheat": "95",
-
-
+    "temp-target": "77",
 
 
     "failover-only" : true,

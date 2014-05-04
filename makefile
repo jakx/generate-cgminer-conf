@@ -5,6 +5,8 @@ bamt_install:
 	fi
 
 create_cgminer:
-	./generate_config.sh
+	touch cgminer.conf
+	cat cgminer.start > cgminer.conf
+	python generate_config.py >> cgminer.conf
 
 install: create_cgminer bamt_install
