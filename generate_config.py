@@ -4,11 +4,12 @@
 #A script to setup miners
 #Thu May  1 15:31:49 PDT 2014
 
-#$ATI_IN=`aticonfig --list-adapters`;
+import subprocess
 import json
 
-ATI_IN='\n* 0. 01:00.0 AMD Radeon R9 200 Series                           \n  1. 02:00.0 AMD Radeon HD 7900 Series \n  2. 03:00.0 AMD Radeon R9 200 Series                           \n  3. 07:00.0 AMD Radeon R9 290 Series\n  4. 08:00.0 AMD Radeon R9 290 Series\n* - Default adapter\n';
-#from pprint import pprint
+#ATI_IN='\n* 0. 01:00.0 AMD Radeon R9 200 Series                           \n  1. 02:00.0 AMD Radeon HD 7900 Series \n  2. 03:00.0 AMD Radeon R9 200 Series                           \n  3. 07:00.0 AMD Radeon R9 290 Series\n  4. 08:00.0 AMD Radeon R9 290 Series\n* - Default adapter\n';
+
+ATI_IN = subprocess.Popen(["aticonfig", "--list-adapters"], stdout=subprocess.PIPE).communicate()[0]
 json_data=open('miner_conf.json')
 miner_data = json.load(json_data)
 #pprint(miner_data)
