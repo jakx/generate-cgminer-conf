@@ -1,0 +1,7 @@
+edit miner_conf.json to edit settings for different models (supports r9 290 29 270 and 7900)
+
+edit cgminer.start to add or remove generic settings
+
+run 'make create_cgminer' to create a cgminer.conf 
+
+run 'make install' to have it automatically move it into /etc/bamt/
