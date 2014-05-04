@@ -1,7 +1,7 @@
-edit miner_conf.json to edit settings for different models (supports r9 290; r9 270; and 7900)
+Edit miner_conf.json to edit settings for different models (supports r9 290; r9 270; and 7900).
 
-edit cgminer.start to add or remove generic settings
+Edit cgminer.start to add or remove generic settings.
 
-run 'make create_cgminer' to create a cgminer.conf 
+Run 'make create_cgminer' to create a cgminer.conf.
 
-run 'make install' to have it automatically move it into /etc/bamt/
+Run 'make install' to have it automatically move it into /etc/bamt/.
