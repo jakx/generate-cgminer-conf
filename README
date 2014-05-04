@@ -1,4 +1,4 @@
-edit miner_conf.json to edit settings for different models (supports r9 290 29 270 and 7900)
+edit miner_conf.json to edit settings for different models (supports r9 290; r9 270; and 7900)
 
 edit cgminer.start to add or remove generic settings
 
