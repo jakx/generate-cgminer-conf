@@ -31,7 +31,7 @@ for i, video_card in enumerate(video_cards):
     if i != len(video_cards) - 1:
         fileout_string +=","
 
-fileout_string+="\"\n"
+fileout_string+="\",\n"
 
 
 fileout_string += "\"intensity\": \""
@@ -40,7 +40,7 @@ for i, video_card in enumerate(video_cards):
     if i != len(video_cards) - 1:
         fileout_string +=","
 
-fileout_string+="\"\n"
+fileout_string+="\",\n"
 
 fileout_string += "\"gpu-engine\": \""
 for i, video_card in enumerate(video_cards):
@@ -48,7 +48,7 @@ for i, video_card in enumerate(video_cards):
     if i != len(video_cards) - 1:
         fileout_string +=","
 
-fileout_string+="\"\n"
+fileout_string+="\",\n"
 
 fileout_string += "\"gpu-memclock\": \""
 for i, video_card in enumerate(video_cards):
@@ -56,13 +56,23 @@ for i, video_card in enumerate(video_cards):
     if i != len(video_cards) - 1:
         fileout_string+=","
 
-fileout_string+="\"\n"
+fileout_string+="\",\n"
+
+fileout_string += "\"gpu-powertune\": \""
+for i, video_card in enumerate(video_cards):
+    fileout_string+=miner_data[''.join(video_card)]["gpupowertune"]
+    if i != len(video_cards) - 1:
+        fileout_string+=","
+
+fileout_string+="\",\n"
+
 
 fileout_string += "\"worksize\": \""
 for i, video_card in enumerate(video_cards):
     fileout_string+=miner_data[''.join(video_card)]["worksize"]
     if i != len(video_cards) - 1:
         fileout_string+=","
+
 
 fileout_string+="\"\n"
 

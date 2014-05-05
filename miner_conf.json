@@ -6,6 +6,7 @@
             "intensity"      : "20",
             "worksize"      : "256",
             "gpuengine" : "1060"
+            "gpupowertune" : "0"
         }
      ,
 "m290": 
@@ -15,6 +16,7 @@
             "intensity"      : "20",
             "worksize"      : "512",
             "gpuengine" : "947"
+            "gpupowertune" : "0"
         }
      ,
 "m270": 
@@ -24,6 +26,7 @@
             "intensity"      : "20",
             "worksize"      : "256",
             "gpuengine" : "1050"
+            "gpupowertune" : "0"
         }
      
 }
