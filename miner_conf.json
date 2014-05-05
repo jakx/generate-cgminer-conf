@@ -5,7 +5,7 @@
             "threadconcurrency"       : "21712",
             "intensity"      : "20",
             "worksize"      : "256",
-            "gpuengine" : "1060"
+            "gpuengine" : "1060",
             "gpupowertune" : "0"
         }
      ,
@@ -15,7 +15,7 @@
             "threadconcurrency"       : "30500",
             "intensity"      : "20",
             "worksize"      : "512",
-            "gpuengine" : "947"
+            "gpuengine" : "947",
             "gpupowertune" : "0"
         }
      ,
@@ -25,7 +25,7 @@
             "threadconcurrency"       : "16000",
             "intensity"      : "20",
             "worksize"      : "256",
-            "gpuengine" : "1050"
+            "gpuengine" : "1050",
             "gpupowertune" : "0"
         }
      
